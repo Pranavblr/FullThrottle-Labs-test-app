@@ -17,9 +17,6 @@ class LoanInput extends Component {
     handleClickGetQuote = ()=>{
         this.props.getLoanIntrest(this.props.loanAmount,this.props.loanTenure);
     }
-    handleSliderInputChange = (value)=>{
-        debugger
-    }
     render() {
         return (
             <React.Fragment>
