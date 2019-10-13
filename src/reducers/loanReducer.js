@@ -47,6 +47,7 @@ export default function loanReducer(state=initialState,action){
             return{
                 ...state,
                 loading:false,
+                loanIntrest:[],
                 requestMessgae:action.message
             }
         default:
