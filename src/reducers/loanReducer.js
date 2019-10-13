@@ -9,7 +9,6 @@ let initialState={
     requestMessgae:''
 }
 export default function loanReducer(state=initialState,action){
-    debugger
     switch(action.type){
         case GET_INPUT_VALUES:
             if(action.data.key==='amount'){
@@ -24,12 +23,14 @@ export default function loanReducer(state=initialState,action){
                     loanTenure:action.data.value
                 }
             }
+            break;
         case REQUEST_STARTS:
             return {
                 ...state,
                 loading:true
 
             }
+            break;
         case GET_LOAN_INTREST:
             return {
                 ...state,
